@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDPV | Quest I</title>
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./public/css/tailwindcss.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://kit.fontawesome.com/cd541d2259.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-retro bg-cover bg-no-repeat bg-center">
+    <section class="w-full px-3 mb-12 antialiased select-none" id="">
+        <div class="mx-auto max-w-7xl">
+            <nav class="relative z-50 h-24" x-data="{ showMenu: false }">
+                <div class="container relative flex flex-wrap items-center justify-between h-24 mx-auto font-medium lg:justify-center sm:px-4 md:px-2"
+                    id="">
+                    <a href="index.html" class="w-48 py-4 pr-4">
+                        <img src="/public/img/logo.png" alt="" srcset="">
+                    </a>
+                    <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:w-3/4 md:absolute lg:text-base md:h-auto md:bg-transparent md:p-0 md:relative md:flex"
+                        :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
+                        <div
+                            class="flex-col w-full h-auto overflow-hidden bg-gray-800 rounded-lg select-none
+                            md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto">
+                            <a href="index.html"
+                                class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 select-none md:hidden"><img
+                                    src="/public/img/logo.png" class="w-28" srcset=""></a>
+                            <div class="flex flex-col items-start ml-auto justify-end w-full text-center md:w-2/3 md:mt-0 md:flex-row md:items-center"
+                                id="">
+                                <a href="index.html"
+                                    class="inline-block w-full px-6 py-2 mx-0 font-medium text-left md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center text-active">Quest
+                                    I</a>
+                                <a href="./quest2.html"
+                                    class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-white sm:to-gray-800 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center hover:text-active">Quest
+                                    II</a>
+                                <a href="./quest3.html"
+                                    class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-white sm:to-gray-800 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center hover:text-active">Quest
+                                    III</a>
+                                <a href="./quest4.html"
+                                    class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-white sm:to-gray-800 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center hover:text-active">Quest
+                                    IV</a>
+                                <a href="./quest5.html"
+                                    class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-white sm:to-gray-800 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center hover:text-active">Quest
+                                    V</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div @click="showMenu = !showMenu"
+                        class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 rounded-full cursor-pointer md:hidden hover:bg-gray-100">
+                        <svg class="w-6 h-6 text-gray-700" x-show="!showMenu" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg class="w-6 h-6 text-gray-700" x-show="showMenu" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+            <div class="container max-w-lg px-4 py-28 mx-auto md:max-w-none text-center" id="">
+                <h1 class="text-7xl text-white my-4 font-extrabold text-shadow">QUEST I</h1>
+                <div
+                    class="font-semibold text-shadow glass mx-auto mt-9 px-12 p-10 md:mt-12 md:max-w-2xl md:text-center lg:text-lg w-full h-1/2 text-white shadow-inner">
+                    <p class=" my-5">
+                        Upload foto kamu dengan twibon
+                        dan beri caption yang menarik di
+                        Instagram!
+                    </p>
+                    <p>
+                        Buatlah video perkenalan tentang
+                        mu dan upload di Instagram
+                        #BDPV
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <footer class="">
+        <div class="max-w-screen-xl px-4 py-5 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8 bg-black">
+            <div class="flex justify-center mt-8 space-x-6" id="">
+                <a href="https://www.instagram.com/broadcastgrafika/" class="text-gray-400 hover:text-gray-500">
+                    <i class="fab fa-instagram fa-lg fa-fw"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCDXEtXsPfh-wSppIuXsPSZQ"
+                    class="text-gray-400 hover:text-gray-500">
+                    <i class="fab fa-youtube fa-lg fa-fw"></i>
+                </a>
+            </div>
+            <p class="mt-8 text-base leading-6 text-center text-gray-400">
+                Made with &#128153; & &#9749; by BCGRF Dev Team.
+                </p>
+                <p class="text-gray-400 text-center">
+                    © 2021 Broadcast Grafika.
+            </p>
+        </div>
+    </footer> -->
+    <footer class="" style="background-color: #2C1446;">
+        <div class="max-w-screen-xl px-4 py-2 mx-auto space-y-6 overflow-hidden sm:px-6 lg:px-8" style="background-color: #2C1446;">
+            <div class="flex mt-7 space-x-6 float-right" id="">
+                <a href="https://www.instagram.com/broadcastgrafika/" class="text-white hover:text-gray-500">
+                    <i class="fab fa-instagram fa-lg fa-fw"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCDXEtXsPfh-wSppIuXsPSZQ" class="text-white hover:text-gray-500">
+                    <i class="fab fa-youtube fa-lg fa-fw"></i>
+                </a>
+            </div>
+            <p class="text-base leading-8 pb-4 text-white">
+                Copyright © Broadcast Grafika 2021
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+</body>
+
+</html>

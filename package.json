@@ -1,0 +1,24 @@
+{
+  "name": "bdpv",
+  "version": "1.0.0",
+  "description": "quest bdpv",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss build ./src/css/style.css -o ./public/css/tailwindcss.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcgrf/bdpv.git"
+  },
+  "author": "bcgrf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bcgrf/bdpv/issues"
+  },
+  "homepage": "https://github.com/bcgrf/bdpv#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  }
+}
